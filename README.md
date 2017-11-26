@@ -1,3 +1,6 @@
-RUN
+#Docker shh keys composer
 
-```docker run --rm -v "$PWD":/app -v "$HOME"/.ssh:/home/root/.ssh composer/composer [install]```
+Docker hub https://hub.docker.com/r/amisyura/composer/
+
+#RUN
+```docker run --rm -it -v "$PWD":/app -v "$HOME"/.ssh:/root/.ssh amisyura/composer [install]```
