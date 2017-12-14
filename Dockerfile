@@ -4,7 +4,11 @@ LABEL maintainer="misuraa@gmail.com"
 
 RUN apt-get update && apt-get install -y \
     libmcrypt-dev \
-    libpq-dev
+    libpq-dev \
+    git \
+    zip \
+    unzip \ 
+    php-pclzip
 
 RUN docker-php-ext-install \
     mbstring \
